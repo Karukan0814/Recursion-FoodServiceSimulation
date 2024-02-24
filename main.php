@@ -117,43 +117,58 @@ abstract class FoodItem {
 
     }
 
-    public function getCategory(): string {
-        return "Category is...";
-    }
+    abstract public static function getCategory():string;
 
 }
 
 
 class HawaiianPizza extends FoodItem  {
+    const CATEGORY = self::class;
 
     public function __construct(string $name,float $price,string $description) {
         parent::__construct($name,$price,$description);
 
     }
-
+    public static function getCategory(): string {
+        return self::CATEGORY;
+    }
 }
 
 class Spaghetti extends FoodItem  {
 
+    const CATEGORY = self::class;
+
     public function __construct(string $name,float $price,string $description) {
         parent::__construct($name,$price,$description);
 
     }
-
+    public static function getCategory(): string {
+        return self::CATEGORY;
+    }
 }
 class CheeseBurger extends FoodItem  {
+
+    const CATEGORY = self::class;
 
     public function __construct(string $name,float $price,string $description) {
         parent::__construct($name,$price,$description);
 
+    }
+    public static function getCategory(): string {
+        return self::CATEGORY;
     }
 
 }
 class Fettuccine extends FoodItem  {
 
+    const CATEGORY = self::class;
+
     public function __construct(string $name,float $price,string $description) {
         parent::__construct($name,$price,$description);
 
+    }
+    public static function getCategory(): string {
+        return self::CATEGORY;
     }
 
 }

@@ -5,8 +5,8 @@ class Fettuccine extends FoodItem  {
 
     const CATEGORY = self::class;
 
-    public function __construct(string $name,float $price,string $description) {
-        parent::__construct($name,$price,$description);
+    public function __construct(float $price,string $description) {
+        parent::__construct(self::class,$price,$description);
 
     }
     public static function getCategory(): string {

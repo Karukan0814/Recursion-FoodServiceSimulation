@@ -1,6 +1,7 @@
 <?php
 
-namespace Persons;
+namespace Persons\Employees;
+
 use FoodOrder\FoodOrder;
 
 class Chef extends Employee  {

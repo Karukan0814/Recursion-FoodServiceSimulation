@@ -1,5 +1,5 @@
 <?php
-namespace Invoice;
+namespace Invoices;
 
 class Invoice   {
     protected float $finalPrice;
@@ -16,5 +16,10 @@ class Invoice   {
 
 
 
+    }
+
+    public function printInvoice(){
+        echo "Final Price: $" . $this->finalPrice . "\n";
+        echo "Order Time: " . date("Y-m-d H:i:s", $this->orderTime) . "\n";
     }
 }

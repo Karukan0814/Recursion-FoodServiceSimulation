@@ -1,9 +1,9 @@
 <?php
 
-namespace Persons;
+namespace Persons\Employees;
 
 use FoodOrder\FoodOrder;
-use Restaurant\Restaurant;
+use Restaurants\Restaurant;
 use Invoice\Invoice;
 
 

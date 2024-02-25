@@ -1,6 +1,8 @@
 <?php
 
-namespace Persons;
+namespace Persons\Employees;
+
+use Persons\Person;
 
 class Employee extends Person  {
     protected int $employeeId;
